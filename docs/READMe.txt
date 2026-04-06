@@ -3,20 +3,22 @@ Slide 1:
 
 SMART TRAFFIC LIGHT SYSTEM
 MICROPROCESSORS PROJECT 1
+
 GROUP 4
 GROUP MEMBERS: 
-ABOVE STEPHEN KOI			7341123
+ABOVE STEPHEN KOI			   7341123
 AGBOWADA WISDOM SENA			7341523
-ODURO AGNES				7343823
+ODURO AGNES				        7343823
 ANOKYE EUGENE DONKOR			7342223
 MENSAH SOLOMON KWAKU			7343523
-KOBZIE FUZIEMATA				7343323
+KOBZIE FUZIEMATA		    	7343323
 
 
 
 Slide 2:
 Table of contents:
 Problem Statement………………………………………………………….3
+Connections………………………………………………………….4
 Methodology………………………………………………………………..5
 Simulation…………………………………………………………………..15
 Conclusion…………………………………………………………………..16
@@ -39,6 +41,23 @@ Dynamically allocate green light durations
 Prioritize roads with higher vehicle density 
 Minimize waiting time and improve traffic flow efficiency 
 This project proposes the design and implementation of a Smart Traffic Light System using ultrasonic sensors, a microcontroller (ESP32), and visual display units (LED traffic lights, 7-segment display, and LCD). The system measures vehicle proximity on two intersecting roads and adjusts signal timing accordingly, ensuring optimal traffic management at a two-way intersection.
+
+CONNECTIONS:
+COMPONENT           | PIN NUMBER(S)
+--------------------|-----------------
+Road A Red LED      | 19
+Road A Yellow LED   | 18
+Road A Green LED    | 5
+Road B Red LED      | 23
+Road B Yellow LED   | 32
+Road B Green LED    | 17
+Ultrasonic A TRIG   | 4
+Ultrasonic A ECHO   | 2
+Ultrasonic B TRIG   | 15
+Ultrasonic B ECHO   | 16
+7-Segment Pins      | 13, 12, 14, 27, 26, 25, 33
+LCD I2C SDA         | A4 (or 21 on ESP32)
+LCD I2C SCL         | A5 (or 22 on ESP32)
 
 
 Slide 5:
@@ -166,18 +185,7 @@ Low-cost: Uses simple sensors and LEDs
 
 
 
-Slide 15:
-SIMULATION:
 
-Slide 16:
-SIMULATION:
-
-
-Slide 17:
-SIMULATION:
-
-
-Slide 18:
 CONCLUSION:
 Conclusion
 This project successfully designed and implemented a Smart Traffic Light System capable of dynamically adjusting signal timings based on real-time traffic conditions at a two-way intersection. By integrating ultrasonic sensors, a microcontroller, and visual display units, the system was able to monitor vehicle proximity and prioritize roads with higher traffic density.
@@ -189,7 +197,6 @@ The use of a 7-segment display and LCD enhances system transparency by providing
 Compared to conventional fixed-time systems, the proposed system reduces unnecessary waiting time and improves overall efficiency at intersections. 
 
 
-Slide 19:
 CONCLUSION:
 Challenges Encountered
 During the development and simulation of the system, several challenges were identified:
@@ -199,7 +206,7 @@ Timing Constraints: The use of delay-based timing (delay() function) reduces sys
 Simulation Limitations: The simulation environment does not perfectly replicate real-world traffic behavior, such as continuous vehicle movement or unpredictable conditions.
 
 
-Slide 20:
+
 CONCLUSION:
 7. Limitations of the Approach
 Only considers distance, not exact vehicle count 
@@ -212,7 +219,7 @@ Add multiple sensors per lane for better accuracy
 Integrate with IoT/cloud systems for smart city applications
 
 
-Slide 21:
+
 CONCLUSION:
 Final Remark:
 Overall, the Smart Traffic Light System demonstrates a practical and cost-effective solution for improving traffic management in low to medium traffic intersections. With further enhancements, it has the potential to be deployed in real-world smart transportation systems, contributing to reduced congestion, improved travel time, and better urban mobility.
